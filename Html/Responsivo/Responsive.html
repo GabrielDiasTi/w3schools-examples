@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--para poder trabalhar com mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+
+<body>
+  <!---------------------------------------->
+  <h2> Imagem responsiva </h2>
+  <p> Quando a propriedade de largura CSS é definida em um valor de porcentagem,
+    a imagem aumentará ou diminuirá ao redimensionar a janela do navegador. </p>
+
+  <img src="img_girl.jpg" style="width: 100%;">
+  <!--ocupará todo tamanho da tela-->
+
+  <h2> Imagem responsiva com MAX-WIDTH</h2>
+  <p> "max width: 100%" evita que a imagem fique maior do que seu tamanho original.</p>
+
+
+  <img src="img_girl.jpg" style="max-width: 100%; height: auto;">
+  <hr>
+
+
+  <!---------------------------------------->
+  <h2>mostrar diferentes imagends dependendo do tamanho da tela</h2>
+  <p>Redimensione a largura do navegador e a imagem mudará em 600px e 1500px.</p>
+
+  <picture>
+    <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+    <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+    <source srcset="flowers.jpg">
+    <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+  </picture>
+  <hr>
+  <!---------------------------------------->
+
+  <h1 style="font-size: 10vw;"> Texto responsivo </h1>
+  <p>O tamanho do texto pode ser definido com uma unidade "vw", que significa a "largura da janela de visualização".</p>
+  <p style="font-size: 5vw;"> Redimensione a janela do navegador para ver como o tamanho do texto é redimensionado. </p>
+
+  <p style="font-size: 5vw;"> Use a unidade "vw" ao dimensionar o texto. 10vw definirá o tamanho para 10% da largura da
+    janela de visualização. </p>
+
+  <p> Viewport é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização.
+    Se a janela de visualização tiver 50 cm de largura, 1vw é 0,5 cm. </p>
+  <hr>
+
+  <!---------------------------------------->
+</body>
+
+</html>

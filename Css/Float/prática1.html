@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .pai {
+      width: 1280px;
+      padding: 20px 0;
+      background: blue;
+      margin: 0 auto;
+
+    }
+
+    .child {
+      box-sizing: border-box;
+      border: 1px solid grey;
+      width: 640px;
+      height: 300px;
+      background: red;
+      float: left;
+      text-align: center;
+      font-size: 40px;
+      padding: 50px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pai">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+
+    <!--quer dizer para limpar as flutuações para ambos os lados-->
+    <div style="clear: both;"></div>
+  </div>
+  <!--pai-->
+</body>
+
+</html>

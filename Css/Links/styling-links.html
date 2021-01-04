@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* link não visitado */
+    a:link {
+      color: red;
+      text-decoration: none;
+    }
+
+    /* link visitado */
+    a:visited {
+      color: green;
+    }
+
+    /* se passar o mouse por cima do link */
+    a:hover {
+      color: blueviolet;
+      text-decoration: underline;
+    }
+
+    /* link selecionado */
+    a:active {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>CSS Links</h2>
+  <p><b><a href="default.asp" target="_blank"> Este é um link </a></b></p>
+
+  <p><b> Observação: </b> a: hover DEVE vir depois de um: link e a: visitado na definição CSS para ser eficaz. </p>
+  <p><b> Observação: </b> a: active DEVE vir depois de a: hover na definição CSS para ser eficaz. </p>
+
+</body>
+
+</html>

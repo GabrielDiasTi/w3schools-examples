@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!---------------------------------------->
+
+  <h1> O atributo de valor de entrada </h1>
+
+  <p> O atributo value especifica um valor inicial para um campo de entrada: </p>
+
+  <form action="/ action_page.php">
+    <label for="fname"> Nome: </label> <br>
+    <input type="text" id="fname" name="fname" value="John"> <br>
+    <label for="lname"> Sobrenome: </label> <br>
+    <input type="text" id="lname" name="lname" value="Doe"> <br> <br>
+    <input type="submit" value="Submit">
+    <p> O atributo somente leitura especifica que um campo de entrada deve ser somente leitura (não pode ser alterado):
+    </p>
+    <input type="text" id="fname" name="fname" value="John" readonly><br>
+
+    <p> O atributo disabled especifica que um campo de entrada deve ser desativado (inutilizável e não clicável): </p>
+    <input type="text" id="fname" name="fname" value="John" disabled><br>
+
+    <p>O atributo input maxlength especifica o número máximo de caracteres permitidos em um campo de entrada.</p>
+    <p>O atributo size especifica a largura visível, em caracteres, de um campo de entrada.</p>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" maxlength="4" size="4">
+
+
+    <p>O atributo placeholder especifica uma pequena dica que descreve o valor esperado de um campo de entrada.</p>
+    <label for="phone">Enter a phone number:</label><br><br>
+    <input type="tel" id="phone" name="phone" placeholder="Coloque seu número aqui"
+      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  </form>
+  <hr>
+
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <p>O atributo required significa que é obrigatório informar os dados daquele campo</p>
+  </form>
+  <hr>
+
+
+  <!---------------------------------------->
+  <h1> O atributo de foco automático de entrada </h1>
+
+  <p> O atributo autofocus especifica que o campo de entrada deve receber foco automaticamente quando a página for
+    carregada. </p>
+  <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" autofocus><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+</body>
+
+</html>

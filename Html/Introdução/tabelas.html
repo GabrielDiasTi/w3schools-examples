@@ -1,0 +1,124 @@
+<doctype html>
+    <html>
+        <body>
+<head>
+    <style>
+        table {
+  border-spacing: 45px;
+}
+        table, th, td {
+            padding: 15px;
+            text-align: left;
+     
+
+  border: 4px solid green;
+  border-collapse: collapse;/*para a borda se contrair*/
+
+  
+}
+
+
+#t01 {
+  width: 100%;    
+  background-color: #f1f1c1;
+}
+    </style>
+</head>
+
+            <!---------------------------------------->
+ <h2>Basic HTML Table</h2>
+
+
+
+<table style="width:100%"><!--A tag <table> define uma tabela HTML.-->
+
+
+    <tr> <!--Cada linha da tabela é definida com uma tag <tr>.  -->
+   
+
+    <th>Firstname</th><!--Cada cabeçalho da tabela é definido com uma tag <th>.-->
+    <th>Lastname</th> 
+    <th>Age</th>
+
+  </tr>
+  <tr>
+
+    <td>Jill</td><!--Cada dado / célula da tabela é definido com uma tag <td>.-->
+    <td>Smith</td>          <!--Por padrão, o texto nos elementos <th> está em negrito e centralizado.
+        
+                            Por padrão, o texto nos elementos <td> são regulares e alinhados à esquerda.-->
+    <td>50</td>
+
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+<br>
+<hr>
+<!---------------------------------------->
+<h2>Célula que se estende por duas colunas</h2>
+<p>Para fazer uma célula ocupar mais de uma coluna, use o atributo colspan. </p>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+<br>
+<hr>
+<!---------------------------------------->
+<h2>Célula que se estende por duas linhas</h2>
+<p>Para fazer uma célula ocupar mais de uma linha, use o atributo rowspan.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<br>
+<hr>
+<!---------------------------------------->
+<h2>Table Caption</h2>
+<p>para uma legenda use a tag caption</p>
+
+<table id="t01" style="width:100%"><!--use id para um estilo especial-->
+  <caption>Economia Mensal</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+        </body>
+    </html>

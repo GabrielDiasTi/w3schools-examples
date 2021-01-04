@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+  <h1> A propriedade align-items </h1>
+
+  <p> O "align-items: center;" alinha os itens flexíveis no meio do contêiner:(só em questão de altura) </p>
+  <p> O "align-items: flex-start;" alinha os itens flexíveis na parte superior do contêiner: </p>
+  <p> O "align-items: flex-end;" alinha os itens flexíveis na parte inferior do contêiner: </p>
+  <p> O "align-items: stretch;" estica os itens flexíveis para preencher o recipiente (este é o padrão): </p>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+
+</body>
+</html>

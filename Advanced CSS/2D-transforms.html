@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: scale(0.5,0.5); /* IE 9 */
+  transform: scale(0.5,0.5); /* O método scale () aumenta ou diminui o tamanho de um elemento.*/
+}
+
+div#myDiv {
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg); /* ou -20deg */
+  
+}
+div#youDiv {
+  -ms-transform: skewX(20deg); /* IE 9 */
+  transform: skewX(20deg); /* Standard syntax */
+}
+
+</style>
+</head>
+<body>
+
+  <h1> Método rotate () </h1>
+  <p> O método rotate () gira um elemento no sentido horário ou anti-horário. </p>
+  
+  <div>
+    O método scale () aumenta ou diminui o tamanho de um elemento.
+  </div>
+  
+  <div id = "myDiv">
+  Este elemento div é girado 20 graus no sentido horário.
+  </div>
+
+  <div id="youDiv">
+    Este elemento div é inclinado 20 graus ao longo do eixo X.
+    </div>
+    
+</body>
+</html>

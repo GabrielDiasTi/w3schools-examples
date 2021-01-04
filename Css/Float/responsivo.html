@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    .container {
+      width: 98%;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: red;
+    }
+
+    .box {
+      border: 1px solid black;
+      background-color: green;
+      width: 33.3%;
+      height: 300px;
+      float: left;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        text-align: center;
+      }
+
+      .box {
+        float: none;
+        display: inline-block;
+        width: 40%;
+        margin-bottom: -4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!--div cegas para centralizar o elemento-->
+    <div><div class="box"></div></div>
+    <div><div class="box"></div></div>
+    <div><div class="box"></div></div>
+  </div><!--container-->
+  
+
+
+</body>
+
+</html>

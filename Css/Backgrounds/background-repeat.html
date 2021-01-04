@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      /*por padrão o background repete*/
+      background-image: url("gradient_bg.png");
+
+      /*a imagem não repetirá*/
+      /*background-repeat: repeat-y;*/
+      /*background-repeat: repeat-x;*/
+      background-repeat: no-repeat;
+
+      /*Posicione a imagem de fundo no canto superior direito:*/
+      background-position: right top;
+
+      /*fixed quando rolar para baixo acompanhará/ scroll a imagem ficará parada*/
+      background-attachment: scroll;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Hello World!</h1>
+  <p>Aqui, uma imagem de fundo é repetida apenas horizontalmente!</p>
+
+</body>
+
+</html>

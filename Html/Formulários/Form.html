@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!---------------------------------------->
+
+<body>
+  <h2>HTML Forms</h2>
+
+  <form action="/action_page.php">
+    <label for="fname">Primeiro Nome:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Sobrenome:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>Se você clicar no botão "Enviar", os dados do formulário serão enviados para uma página chamada "/action_page.php".
+  </p>
+  <hr>
+  <!---------------------------------------->
+  <table style="width: 100%;">
+    <tr>
+      <th>Tipo</th>
+      <th>Descrição</th>
+    </tr>
+
+    <tr style="text-align: center; ">
+      <td>"/input type="text"\</td>
+      <td>Exibe um campo de entrada de texto de linha única</td>
+    </tr>
+    <tr style="text-align: center;">
+      <td>/"input type="radio"\</td>
+      <td>Exibe um botão de opção (para selecionar uma das muitas opções)</td>
+    </tr>
+
+    <tr style="text-align: center;">
+      <td>/input type="checkbox"\</td>
+      <td>Exibe uma caixa de seleção (para selecionar zero ou mais de muitas opções)</td>
+    </tr>
+
+    <tr style="text-align: center;">
+      <td>/input type="submit"\</td>
+      <td>Exibe um botão de envio (para enviar o formulário)</td>
+    </tr>
+
+    <tr style="text-align: center;">
+      <td>/input type="button"\</td>
+      <td>Exibe um botão clicável</td>
+    </tr>
+
+
+  </table>
+  <hr>
+  <!---------------------------------------->
+
+
+  <h2> Campos de entrada de texto </h2>
+
+  <form>
+    <label for="fname"> Nome: </label> <br>
+    <input type="text" id="fname" name="fname" value="Gabriel"> <br>
+    <label for="lname"> Sobrenome: </label> <br>
+    <input type="text" id="lname" name="lname" value="Dias">
+  </form>
+
+  <p> Observe que o formulário em si não é visível. </p>
+  <p> Observe também que a largura padrão dos campos de entrada de texto é de 20 caracteres. </p>
+  <hr>
+  <!---------------------------------------->
+  <h2>Radio Buttons</h2>
+
+  <form>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+  </form>
+  <hr>
+  <!---------------------------------------->
+  <h2>Checkboxes</h2>
+  <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+  <form action="/action_page.php">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br><br>
+    <input type="submit" value="Submit">
+    <!--define um botão para enviar os dados para o servidor-->
+  </form>
+
+
+</body>
+
+</html>

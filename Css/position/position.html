@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div.static {
+      position: static;
+      border: 3px solid #73AD21;
+    }
+
+    div.relative {
+      position: relative;
+      left: 30px;
+      border: 3px solid #73AD21;
+    }
+
+    div.relative1 {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      border: 3px solid #73AD21;
+    }
+
+    div.absolute1 {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      border: 3px solid #73AD21;
+    }
+
+    div.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      padding: 5px;
+      background-color: #cae8ca;
+      border: 2px solid #4CAF50;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2> posição: estática; </h2>
+
+  <p> Um elemento com posição: estático; não está posicionado de forma especial; isto é
+    o padrão do site: </p>
+
+  <div class="static">
+    Este elemento div tem position: static;
+  </div>
+  <hr>
+
+  <h2> posição: relativa; </h2>
+
+  <p> Um elemento com posição: relativa; está posicionado em relação à sua posição normal: </p>
+
+  <div class="relative">
+    Este elemento div tem position: relative;
+  </div>
+  <hr>
+
+  <h2> posição: fixa; </h2>
+
+  <p> Um elemento com posição: fixo; está posicionado em relação à janela de visualização, o que significa que sempre
+    permanece no mesmo lugar, mesmo se a página for rolada: </p>
+
+  <div class="fixed">
+    Este elemento div tem position: fixed;
+  </div>
+  <hr>
+  <!-------------------------------------------------------------------------------------->
+
+  <h2> posição: absoluta; </h2>
+
+  <p> Um elemento com posição: absoluto; é posicionado em relação ao ancestral posicionado mais próximo (em vez de
+    posicionado em relação à janela de visualização, como fixo): </p>
+
+  <div class="relative1"> Este elemento div tem position: relative;
+    <div class="absolute1"> Este elemento div tem a posição: absolute; </div>
+  </div>
+  <hr>
+  <!-------------------------------------------------------------------------------------->
+
+  <p> Tente <b> rolar </b> dentro desse quadro para entender como funciona o posicionamento fixo. </p>
+
+  <div class="sticky"> Eu sou pegajoso! </div>
+  <div style="padding-bottom: 2000px">
+    <p> Neste exemplo, o elemento aderente adere ao topo da página (topo: 0), quando você atinge a posição de rolagem.
+    </p>
+    <p> Role para cima para remover a aderência. </p>
+    <p> Algum texto para permitir a rolagem. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+      concludaturque et eum,
+      como aquele pelo qual as outras histórias. E ainda assim, ele se orgulha de fazer com que você faça tudo o que foi
+      destruído. Ele traz, e nós labutamos, nem repudiamos. Este último em cuja produção eles caíram. Não é
+      inconveniente para o prazer. </ P>
+    <P> Algum texto para permitir a rolagem .. lorem ipsum carrots, não há definições, ao invés disso concludaturque e
+      de outras histórias como esta.
+      E ainda assim, ele se orgulha de fazer com que você faça tudo o que foi destruído. Ele traz, e nós labutamos, nem
+      repudiamos. Este último em cuja produção eles caíram. Não é inconveniente para o prazer. </ P>
+
+
+
+</body>
+
+</html>

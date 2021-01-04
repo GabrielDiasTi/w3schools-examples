@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!---------------------------------------->
+
+
+
+  O elemento <label> é útil para usuários de leitores de tela, porque o leitor de tela lerá o rótulo em voz alta quando
+    o usuário focar no elemento de entrada.
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="submit">
+    </form>
+    <hr>
+    <!---------------------------------------->
+
+    <h2> O elemento selecionado </h2>
+
+    <p> O elemento select define uma lista suspensa: </p>
+
+    <form action="/action_page.php">
+      <label for="cars">escolha um carro:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="submit">
+    </form>
+    <hr>
+    <!---------------------------------------->
+
+    <h2> Opção pré-selecionada </h2>
+
+    <p> Você pode pré-selecionar uma opção com o atributo selecionado: </p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <!--SELECTED-->
+        <option value="audi">Audi</option>
+      </select>
+      <input type="submit">
+    </form>
+    <hr>
+    <!---------------------------------------->
+
+    <h2> Área de texto </h2>
+    <p> O elemento textarea define um campo de entrada de várias linhas. </p>
+
+    <form action="/action_page.php">
+      <textarea name="message" rows="10" cols="30"> O gato estava brincando no jardim. </textarea>
+      <br><br>
+      <input type="submit">
+    </form>
+    <hr>
+
+    <!---------------------------------------->
+
+    <h2>botão</h2>
+    <button type="button" onclick="alert('Olá mundo!')">Clique aqui!</button>
+    <hr>
+    <!---------------------------------------->
+
+
+</body>
+
+</html>
